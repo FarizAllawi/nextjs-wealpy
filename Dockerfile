@@ -3,8 +3,8 @@ FROM node:18-alpine
 ENV NODE_ENV=production
 
 # Set the working directory inside the container
-RUN mkdir -p /app
-WORKDIR /app
+RUN mkdir -p /nextjs-wealpy
+WORKDIR /nextjs-wealpy
 
 # Copy the entire project to the working directory
 COPY . .
