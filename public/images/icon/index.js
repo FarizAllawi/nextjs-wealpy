@@ -18,7 +18,9 @@ import IcAcademy from './icon-academy.svg'
 import IcPlay from './icon-play.svg'
 import IcTime from './icon-time.svg'
 import IcPlayWhite from './icon-play-white.svg'
+import IcPauseWhite from './icon-pause-white.svg'
 import IcSpeakerWhite from './icon-speaker-white.svg'
+import IcSpeakerMutedWhite from './icon-speaker-muted-white.svg'
 import IcSettingWhite from './icon-setting-white.svg'
 import IcFullScreenWhite from './icon-fullscreen-white.svg'
 import IcTwitterWhite from './icon-twitter.svg'
@@ -46,9 +48,11 @@ export {
   IcLeftArrow,
     IcAcademy,
   IcPlay,
+  IcPauseWhite,
   IcTime,
   IcPlayWhite,
   IcSpeakerWhite,
+  IcSpeakerMutedWhite,
   IcSettingWhite,
   IcFullScreenWhite,
   IcTwitterWhite,

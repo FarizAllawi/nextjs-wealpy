@@ -1,6 +1,8 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 const globalState = {
+  windowSize: {},
+
   isLoading: false,
   loadingMessage: "",
 
@@ -8,12 +10,18 @@ const globalState = {
   errors: [],
 
   dataCategory: [],
+
 }
 
 export const global = createSlice({
   name: "global",
   initialState: globalState,
   reducers: {
+    setWindowSize: (state, action) => {
+      return {
+        windowSize: action.payload
+      }
+    },
     setErrors: (state, action) => {
       return {
         errors: action.payload.errors,
@@ -34,6 +42,7 @@ export const global = createSlice({
 })
 
 export const {
+  setWindowSize,
   setErrors,
   setLoading,
   setDataCategory

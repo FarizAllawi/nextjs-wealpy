@@ -15,28 +15,28 @@ export default function News() {
 
 
   return (
-    <main className="flex-col w-full min-h-screen items-center mx-auto 2xl:px-20 2xl:py-24">
-      <div className="flex flex-col gap-2 min-h-screen pt-20 2xl:pt-20">
+    <main className="flex-col w-full min-h-screen items-center mx-auto lg:px-20 lg:py-20 2xl:py-24 ">
+      <div className="flex flex-col space-y-8 min-h-screen lg:pt-8 2xl:pt-16 lg:px-16 2xl:px-32">
 
         <Suspense>
           <SearchNews />
         </Suspense>
 
 
-        <div className="flex flex-row h-4/5 gap-4 2xl:px-20">
+        <div className="flex flex-col lg:flex-row h-4/5 space-y-8 lg:space-y-0 lg:space-x-5 px-6 lg:px-0">
           <Suspense>
-            <div className="w-1/3 flex flex-col gap-2">
-              <div className="font-semibold text-white text-xl 2xl:px-16">Featured News</div>
+            <div className="w-full lg:w-1/3 flex flex-col space-y-4">
+              <div className="font-semibold text-white text-xl">Featured News</div>
               <FeaturedNews />
             </div>
           </Suspense>
 
           <Suspense>
-            <div className="w-1/3 relative flex flex-col gap-2  ">
+            <div className="w-full lg:w-1/3 relative flex flex-col space-y-4">
               <div className="font-semibold text-white text-xl">Lastest News</div>
-              <div className="relative h-full overflow-y-scroll scrollbar-none rounded-t-3xl">
-                <div className="absolute w-full h-auto ">
-                  <div className="w-full h-full flex flex-col gap-4 ">
+              <div className="relative h-96 lg:h-full overflow-y-scroll scrollbar-none rounded-t-3xl">
+                <div className="absolute w-full h-auto">
+                  <div className="w-full h-full flex flex-col space-y-4">
                     <LastestNews />
                   </div>
                 </div>
@@ -45,9 +45,9 @@ export default function News() {
           </Suspense>
 
           <Suspense>
-            <div className="w-1/3 flex flex-col gap-2 2xl:pr-12">
+            <div className="w-full lg:w-1/3 flex flex-col 2xl:pr-12 space-y-4">
               <div className="font-semibold text-white text-xl">5 Top Picks</div>
-              <div className="w-full h-full flex flex-col gap-2">
+              <div className="w-full h-full flex flex-col space-y-4 lg:space-y-2 2xl:space-y-4">
                 <TopPicks />
               </div>
             </div>

@@ -12,13 +12,13 @@ export default function CardCourse(props) {
   } = props
 
   return (
-    <div className="w-full flex flex-col space-y-4 bg-gray-800 bg-opacity-40 rounded-3xl">
+    <div className="w-full flex flex-col space-y-2 lg:space-y-4 bg-gray-800 bg-opacity-40 rounded-3xl">
       <Image src={ImageThumbnailCourse} layout="responsive" objectFit='cover' className="rounded-t-3xl w-full" alt="thumbnail" />
-      <div className="flex flex-col space-y-4 py-5 px-5">
+      <div className="flex flex-col space-y-2 lg:space-y-4 py-2.5 lg:py-5  px-4 lg:px-5">
         <div className="font-medium text-white text-xs">{item.videos} Videos</div>
-        <div className="font-bold text-white text-sm leading-6">{item.title.toUpperCase()}</div>
+        <div className="font-bold text-white text-xs lg:text-sm leading-6">{item.title.toUpperCase()}</div>
         <div className="flex flex-row py-3">
-          <div className='py-1.5 px-3 text-sm text-green-500 bg-gray-800 rounded-full'>
+          <div className='py-1.5 px-3 text-xs lg:text-sm text-green-500 bg-gray-800 rounded-full'>
             {item.tingkat}
           </div>
         </div>

@@ -38,11 +38,11 @@ export default function LastestNews(props) {
       {
         news.map((item, index) => {
           return (
-            <div key={index} className="relative w-full h-72">
-              <Image src={item.thumbnail} layout="fill" objectFit='cover' className="rounded-3xl w-full h-3/6" alt="thumbnail-image" />
+            <div key={index} className="relative w-full h-60 2xl:h-72">
+              <Image src={item.thumbnail} fill={true} style={{ objectFit:"cover"}} className="rounded-3xl w-full" alt="thumbnail-image" />
               <div className="absolute w-full h-full">
                 <div className="flex flex-col px-5 py-6 gap-5 bg-gray-800 bg-opacity-60 rounded-3xl h-full">
-                  <div className="font-semibold leading-8 text-lg text-white">
+                  <div className="font-semibold leading-7 2xl:leading-8 text-lg text-white">
                     {item.title}
                   </div>
                   <div className="w-full flex flex-row gap-2 place-content-start items-center">

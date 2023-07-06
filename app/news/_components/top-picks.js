@@ -41,11 +41,9 @@ export default function TopPicks(props) {
       {
         news.map((item, index) => {
           return (
-            <Link key={index} href={`/news/${Slugify(item.title)}`} className="w-full h-1/5 flex flex-row gap-3 bg-gray-800 bg-opacity-40 rounded-2xl">
+            <Link key={index} href={`/news/${Slugify(item.title)}`} className="relative w-full h-1/5 flex flex-row gap-3 bg-gray-800 bg-opacity-40 rounded-2xl">
+              <Image src={item.thumbnail} fill={false} style={{ objectFit: "cover"}} className="w-4/12 rounded-tl-2xl rounded-bl-2xl" alt="thumbnail-image" />
 
-              <div className="w-4/12 h-full flex">
-                <Image src={item.thumbnail}  layout="intrinsic" className=" object-fill rounded-tl-2xl rounded-bl-2xl" alt="thumbnail-image" />
-              </div>
               <div className="w-8/12 h-full flex flex-col gap-3 py-2 pr-3">
                 <div className="font-semibold text-white text-xs">{item.title}</div>
                 <div className="font-medium text-white text-xs">{item.publishDate}</div>
