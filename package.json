@@ -1,0 +1,33 @@
+{
+  "name": "nextjs-wealpy",
+  "version": "1.2.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3001",
+    "build": "next build",
+    "start": "next start -p 3001",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.5",
+    "@svgr/webpack": "^8.0.1",
+    "autoprefixer": "10.4.14",
+    "eslint": "8.42.0",
+    "eslint-config-next": "13.4.8",
+    "next": "13.4.8",
+    "next-auth": "^4.22.1",
+    "postcss": "8.4.24",
+    "prop-types": "^15.8.1",
+    "query-string": "^8.1.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-paginate": "^8.2.0",
+    "react-player": "^2.12.0",
+    "react-redux": "^7.2.9",
+    "react-spring": "^9.7.1",
+    "react-toastify": "^9.1.3",
+    "react-transition-group": "^4.4.5",
+    "swr": "^2.1.5",
+    "tailwindcss": "3.3.2"
+  }
+}
