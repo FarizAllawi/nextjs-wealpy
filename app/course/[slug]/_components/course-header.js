@@ -73,7 +73,7 @@ export default function CourseHeader() {
 
         {/* Video Player */}
         <div className="w-full lg:w-1/2 flex flex-col items-end space-y-4 lg:space-y-8">
-          <VideoPlayer source="https://www.youtube.com/watch?v=oUFJJNQGwhk"/>
+          <VideoPlayer source="https://youtu.be/jp1q6zDi_Tc"/>
         </div>
       </div>
     </>
