@@ -1,0 +1,8 @@
+services:
+  expressjs_wealpy:
+    container_name: nextjs-wealpy
+    build: .
+    image: nextjs-wealpy:1.2.0
+    ports:
+      - "3001:3001"
+    restart: always
